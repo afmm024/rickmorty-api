@@ -1,0 +1,41 @@
+
+type Query {
+    characters: [Characters]
+}
+
+
+type Characters {
+    id: Float
+    name: String
+    status: String
+    species: String
+    type: String
+    gender: String
+    location: [Location]
+    origin: [Location]
+    episode: [Episode]
+    image: String
+    url: String
+    created: String
+}
+
+type Episode {
+    id: Float
+    name: String
+    air_date: String
+    episode: String
+}
+
+type Location {
+    id: Float
+    name: String
+    type: String
+    dimension: String
+    url: String
+    created: String
+}
+
+input NumbersInput {
+    a: Float
+    b: Float
+}
